@@ -1,0 +1,383 @@
+html, body {
+   height: 100%;
+}
+
+nav ul a,
+nav .brand-logo {
+  color: #ffffff;
+}
+
+p {
+  line-height: 2rem;
+}
+
+#devBy {
+  font-size: 0.7rem;
+  bottom: 0;
+}
+
+#main-index-banner {
+  height: 70%;
+  background: #9e9e9e url("../img/main_FT_bg_min50per.jpg") no-repeat scroll left top; /*grey*/
+  background-position: center center;
+  background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -webkit-background-size: 100% 100%;
+  vertical-align: middle;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-top: 1%;
+}
+
+/* start of home page animation */
+@keyframes index-slide {
+  0% {background-position: 0% 0%;-o-background-position: 0% 0%;-moz-background-position: 0% 0%;-webkit-background-position: 0% 0%;}
+  100% {background-position: -1500% 0%;-o-background-position: -1500% 0%;-moz-background-position: -1500% 0%;-webkit-background-position: -1500% 0%;}
+}
+
+@-o-keyframes index-slide {
+  0% {background-position: 0% 0%;-o-background-position: 0% 0%;-moz-background-position: 0% 0%;-webkit-background-position: 0% 0%;}
+  100% {background-position: -1500% 0%;-o-background-position: -1500% 0%;-moz-background-position: -1500% 0%;-webkit-background-position: -1500% 0%;}
+}
+
+@-moz-keyframes index-slide {
+  0% {background-position: 0% 0%;-o-background-position: 0% 0%;-moz-background-position: 0% 0%;-webkit-background-position: 0% 0%;}
+  100% {background-position: -1500% 0%;-o-background-position: -1500% 0%;-moz-background-position: -1500% 0%;-webkit-background-position: -1500% 0%;}
+}
+
+@-webkit-keyframes index-slide {
+  0% {background-position: 0% 0%;-o-background-position: 0% 0%;-moz-background-position: 0% 0%;-webkit-background-position: 0% 0%;}
+  100% {background-position: -1500% 0%;-o-background-position: -1500% 0%;-moz-background-position: -1500% 0%;-webkit-background-position: -1500% 0%;}
+}
+
+#index-image-slide {
+  height: 15%;
+  overflow: hidden;
+  background: #9e9e9e url("../img/ft_imageLine_forSlide.jpg") repeat-x scroll right;  /*grey*/
+  background-size: auto 100%;
+  -o-background-size: auto 100%;
+  -moz-background-size: auto 100%;
+  -webkit-background-size: auto 100%;
+  background-position: 0% 0%;
+  -o-background-position: 0% 0%;
+  -moz-background-position: 0% 0%;
+  -webkit-background-position: 0% 0%;
+  overflow: hidden;
+  margin: 0px;
+  animation: index-slide 300s linear infinite alternate;
+  -o-animation: index-slide 300s linear infinite alternate;
+  -moz-animation: index-slide 300s linear infinite alternate;
+  -webkit-animation: index-slide 300s linear infinite alternate;
+}
+
+#index-image-slide:hover {
+  animation-play-state: paused;
+  -o-animation-play-state: paused;
+  -moz-animation-play-state: paused;
+  -webkit-animation-play-state: paused;
+}
+/* end of home page animation */
+
+#back-to-top {
+  position: fixed;
+  width: 30px;
+  height: 30px;
+  bottom: 10px;
+  right: 10px;
+  transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -moz-ransform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  background: url('../img/scroll.png') no-repeat center center;
+  background-size: contain;
+  -o-background-size: contain;
+  -moz-background-size: contain;
+  -webkit-background-size: contain;
+}
+
+.button-collapse {
+  color: white;
+}
+
+.parallax-container {
+  min-height: 90%;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+
+.parallax-container .section {
+    width: 100%;
+}
+
+nav .brand-logo {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.about-index {
+  background-color: white;
+  width: 100%;
+  height: 480px;
+}
+
+.about-ft {
+  font-weight: normal;
+  font-size: 1em;
+  text-align: justify;
+  max-height: 20em;
+  overflow: hidden;
+}
+
+.contact-ft {
+  font-size: 24px;
+  text-align: center;
+}
+
+#index-service {
+  text-shadow: 1px 1px #b0bec5, -1px -1px 6px #b0bec5;
+}
+
+#about-customer .card-image, #about-servicepartner .card-image {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+#about-customer .card-title, #about-servicepartner .card-title {
+  font-size-adjust: inherit;
+}
+
+.client-logo-home {
+  padding: 0px !important;
+  /*
+   * important is a must. for centralizing the logo 
+   * or else, it will conficts with "padding: 0px 0.75rem" from
+   * materialize css ".row .col" selector.
+   */
+}
+
+/* Start of Logo positioning */
+.logoW1 {
+  max-width: 100px;
+  max-height: 100px;
+  overflow: hidden;
+}
+
+.logoW2 {
+  max-width: 200px;
+  max-height: 100px;
+  overflow: hidden;
+}
+/* End of Logo positioning */
+
+.scroll-text {
+  text-align: center;
+  font-weight: 400;
+}
+
+.slider h3 {
+  text-shadow: 1px 1px 6px #b0bec5, -1px -1px 6px #b0bec5;  /*blue-grey lighten-3*/
+}
+
+.product_banner {
+  text-shadow: 2px 2px 6px #000000, -2px -2px 6px #000000;
+}
+
+.logo-image {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+}
+
+.logo-name {
+  display: inline-block;
+  height: 80%;
+  width: 100%;
+}
+
+.logo-name + p {
+  font-size: 1.5em;
+}
+
+/*to set all parallax images' appear other color before
+  the images appear on slow connection*/
+.index-banner .parallax {
+  background-color: #9e9e9e;  /*grey*/
+}
+
+.parallax-container {
+  min-height: 60%;
+}
+
+.product-logo {
+  vertical-align: middle;
+}
+
+@media only screen and (min-width : 992px) {
+  /*this is necessity to appear on desktop*/
+  nav a.button-collapse {
+    display: inherit;
+  }
+
+  /*this is necessity to make the slide quicker on large width screens*/
+  #index-image-slide {
+    animation-duration: 100s;
+    -o-animation-duration: 100s;
+    -moz-animation-duration: 100s;
+    -webkit-animation-duration: 100s;
+  }
+
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+
+  .product-model-description {
+    padding-top: 50px;
+    padding-left: 80px;
+  }
+
+
+  .head-ft {
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  /* code to totally vertical align */
+  .index-banner .section {
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+
+  nav .brand-logo {
+    font-size: 2.1rem;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  .index-banner .section {
+    top: 0;
+  }
+
+  footer.page-footer .footer-copyright {
+    line-height: 13px;
+    padding-top: 4%;
+  }
+}
+
+
+.icon-block {
+  padding: 0 15px;
+}
+
+footer.page-footer {
+  margin: 0;
+}
+
+h1.services {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 3.5em;
+}
+
+h1.about {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 3.5em;
+}
+
+.about-us {
+  text-align: center;
+}
+
+.about-us h1 {
+  border-bottom: 1px solid #000000;
+  text-transform: uppercase;
+}
+
+.about-us h3 {
+  text-transform: uppercase;
+}
+
+.about-us p {
+  font-size: 1em;
+  letter-spacing: 0.8px;
+}
+
+.spacer {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#product h1.product-heading {
+  text-align: center;
+  font-size: 2.5em;
+}
+
+#product p.product-content {
+  text-align: center;
+  font-size: 1em;
+  letter-spacing: 1px;
+}
+
+#product h3.sub-product-heading {
+  text-align: left;
+  font-size: 1.8em;
+}
+
+.dropdown-content li {
+  text-align: center;
+}
+
+.card .card-content {
+  text-align: left;
+}
+
+.card .card-content .product-info {
+  padding: 0px;
+}
+
+.ghost-button {
+  display: inline-block;
+  width: 200px;
+  padding: 8px;
+  border: 2px solid #000;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.ghost-button:focus {
+  background-color: transparent;
+}
+
+.ghost-button a {
+  color: black;
+}
+
+.product-img {
+  text-align: center;
+  width: auto;
+  height: 240px  ;
+}
+
+.product-name {
+  text-align: center;
+  font-size: large;
+}
+
+h3.product-model-heading {
+  text-align: center;
+  font-size: 2em;
+}
+
+.logo-img {
+  height: 56px;
+  width: auto;
+}
